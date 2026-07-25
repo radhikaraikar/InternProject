@@ -1,0 +1,31 @@
+# Vector store — rebuilt automatically on first run
+chroma_db/
+test_chroma*/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Secrets — NEVER commit
+.env
+.streamlit/secrets.toml
+
+# Virtual envs
+.venv/
+venv/
+env/
+
+# Build artifacts
+*.egg-info/
+dist/
+build/
+
+# Eval output (generated, not source)
+eval_results.json
+eval_comparison_chart.png
+
+# OS
+.DS_Store
+Thumbs.db

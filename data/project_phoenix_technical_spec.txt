@@ -1,0 +1,92 @@
+PROJECT PHOENIX — TECHNICAL SPECIFICATION DOCUMENT
+Version: 2.1
+Last Updated: January 2024
+Author: Engineering Team
+
+================================================================
+1. PROJECT OVERVIEW
+================================================================
+Project Phoenix is ACME Corporation's next-generation customer data platform.
+It replaces the legacy CRM system (Project Atlas) and is expected to go live 
+in Q3 2024.
+
+The system processes approximately 2 million customer records.
+Primary database: PostgreSQL 15 on AWS RDS.
+Caching layer: Redis 7.2.
+Message queue: Apache Kafka 3.6.
+Backend language: Python 3.11 with FastAPI framework.
+Frontend: React 18 with TypeScript.
+
+================================================================
+2. ARCHITECTURE
+================================================================
+The system follows a microservices architecture with the following components:
+
+2.1 Customer Service
+- Manages all customer profile data
+- REST API with OpenAPI 3.0 specification
+- Deployed on Kubernetes (EKS)
+- Horizontal auto-scaling: min 2 pods, max 20 pods
+- SLA: 99.9% uptime, <200ms p95 response time
+
+2.2 Analytics Service
+- Processes customer behaviour data
+- Uses Apache Spark for batch processing (runs nightly at 02:00 UTC)
+- Real-time streaming via Kafka consumers
+- Data warehouse: Amazon Redshift
+
+2.3 Notification Service
+- Sends email, SMS, and push notifications
+- Email provider: SendGrid
+- SMS provider: Twilio
+- Daily notification volume: approximately 500,000 messages
+
+2.4 API Gateway
+- Kong API Gateway 3.4
+- Rate limiting: 1000 requests/minute per API key
+- Authentication: OAuth 2.0 + JWT tokens (expiry: 24 hours)
+
+================================================================
+3. SECURITY
+================================================================
+All data in transit: TLS 1.3
+All data at rest: AES-256 encryption
+PII fields (name, email, phone): additionally encrypted at application layer
+Access control: Role-Based Access Control (RBAC)
+Audit logging: all data access events logged to CloudTrail
+Penetration testing: quarterly, conducted by CyberShield Security
+
+================================================================
+4. PERFORMANCE TARGETS
+================================================================
+Peak throughput: 10,000 API requests per second
+Database query p95: <50ms
+Cache hit rate target: >85%
+Batch processing window: must complete nightly job within 4 hours
+Data freshness: customer profile updates reflected within 5 minutes
+
+================================================================
+5. DISASTER RECOVERY
+================================================================
+RPO (Recovery Point Objective): 1 hour
+RTO (Recovery Time Objective): 4 hours
+Database: automated backups every 6 hours, retained for 30 days
+Multi-AZ deployment in us-east-1 and eu-west-1
+Failover: automated, triggered at 99.5% SLA breach
+
+================================================================
+6. DEPLOYMENT TIMELINE
+================================================================
+Phase 1 (Alpha): February 2024 — internal testing
+Phase 2 (Beta): April 2024 — select customer pilot (500 accounts)
+Phase 3 (GA): Q3 2024 — full rollout
+Legacy system (Project Atlas) decommission: December 2024
+
+================================================================
+7. TEAM
+================================================================
+Project Lead: David Chen (d.chen@acme.com)
+Lead Backend Engineer: Priya Sharma
+Lead Frontend Engineer: Marcus Johnson
+DevOps Lead: Lisa Park
+Security Lead: Omar Khalil

@@ -1,0 +1,64 @@
+ACME CORPORATION — EMPLOYEE POLICY HANDBOOK 2024
+=================================================
+
+SECTION 1: ANNUAL LEAVE POLICY
+--------------------------------
+All full-time employees are entitled to 20 days of paid annual leave per calendar year.
+Part-time employees receive leave on a pro-rata basis.
+Leave must be approved by the direct manager at least 2 weeks in advance.
+Unused leave can be carried over for a maximum of 5 days into the following year.
+Any leave exceeding the carry-over limit will be forfeited.
+
+SECTION 2: REMOTE WORK POLICY
+--------------------------------
+Employees may work remotely up to 3 days per week, subject to manager approval.
+Core working hours are 10:00 AM to 4:00 PM in the employee's local timezone.
+Employees must be available on company communication channels during core hours.
+Remote work equipment (laptop, headset) is provided by the company.
+Home internet costs are NOT reimbursed by the company.
+
+SECTION 3: HEALTH AND WELLNESS BENEFITS
+-----------------------------------------
+The company provides a health insurance allowance of $500 per month per employee.
+Employees are eligible for a gym membership subsidy of $50 per month.
+Mental health support includes 6 free counselling sessions per year through the EAP program.
+Vision care: employees receive $200 annual allowance for glasses or contact lenses.
+Dental care: employees receive $300 annual allowance.
+
+SECTION 4: PERFORMANCE REVIEW CYCLE
+--------------------------------------
+Performance reviews are conducted twice per year: in June and December.
+Employees receive written feedback within 2 weeks of the review.
+Salary adjustments, if any, take effect from the first of the following month.
+Promotions require approval from both the direct manager and HR.
+
+SECTION 5: EXPENSE REIMBURSEMENT
+----------------------------------
+Business travel expenses must be submitted within 30 days of travel.
+Maximum meal allowance for domestic travel: $75 per day.
+Maximum meal allowance for international travel: $150 per day.
+Receipts are required for all expenses over $25.
+Expense reports must be submitted via the company expense portal (expenses.acme.com).
+
+SECTION 6: CODE OF CONDUCT
+----------------------------
+All employees must maintain professional standards in all communications.
+Harassment, discrimination, or bullying of any kind will not be tolerated.
+Conflicts of interest must be declared to HR in writing within 5 business days of arising.
+All company data and intellectual property must be kept confidential.
+Violations of the code of conduct may result in disciplinary action up to and including termination.
+
+SECTION 7: EQUIPMENT AND SECURITY
+------------------------------------
+Company laptops must have full-disk encryption enabled at all times.
+Employees must use the company VPN when accessing internal systems remotely.
+Passwords must be at least 12 characters and changed every 90 days.
+Unauthorized software installation on company devices is prohibited.
+Lost or stolen equipment must be reported to IT Security within 4 hours.
+
+SECTION 8: PARENTAL LEAVE
+---------------------------
+Primary caregivers receive 16 weeks of fully paid parental leave.
+Secondary caregivers receive 4 weeks of fully paid parental leave.
+Parental leave can commence up to 4 weeks before the expected birth/adoption date.
+Employees must give at least 8 weeks notice of planned parental leave.
